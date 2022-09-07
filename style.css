@@ -6,6 +6,11 @@
     display: flex;
 }
 
+input:focus {
+    box-shadow: 3px 2px 7px grey;
+    border: blue;
+}
+
 .bgimage {
     background-image: url(bg.avif);
     background-repeat: no-repeat;
