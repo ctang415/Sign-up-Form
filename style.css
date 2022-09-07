@@ -1,5 +1,31 @@
-body {
-    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+.body {
+    display: flex;
+}
+
+.leftside {
+    display: flex;
+}
+
+.bgimage {
+    background-image: url(bg.avif);
     background-repeat: no-repeat;
-    background-size: 35vw;
+    background-size: cover;
+    width:35%;
+    position: fixed;
+    float: left;
+    height: 100%;
+}
+
+.credit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rightside {
+    display: flex;
+}
+
+.headertext {
+    display: flex;
 }
