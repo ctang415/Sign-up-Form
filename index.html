@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
 <body>
     <div class="body">
-    <div class="leftside">
-        <div class="bglogo"></div>
-        <div class="bgimage">
-            <div class="credit">Photo by <a href="https://unsplash.com/@danieljschwarz">Daniel J. Schwarz</a> on <a href="https://www.unsplash.com">Unsplash</a></div>
+        <div class="leftside">
+            <div class="bgimage">
+                <div class="bglogo"></div>
+                <div class="credit">Photo by <a href="https://unsplash.com/@danieljschwarz">Daniel J. Schwarz</a> on <a href="https://www.unsplash.com">Unsplash</a></div>
             </div>
         </div>
+        
         <div class="rightside">
             <div class="headertext">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
             </div>
             <div class="formdetails">
+                <h2>Let's do this!</h2>
                 <form action="">
                     <label for="firstname">First Name</label>
                     <input type="text" id="firstname" name="firstname" placeholder="John" required>
@@ -32,11 +35,12 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                     <label for="passwordconfirm">Confirm Password</label>
-                    <input type="password" name="password" id="passwordconfirm">
+                    <input type="password" name="password" id="passwordconfirm" required>
                 </form>
             </div>
             <div class="creation">
-
+                <button type="submit" class="button">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>

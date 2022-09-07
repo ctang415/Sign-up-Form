@@ -1,9 +1,9 @@
 .body {
     display: flex;
+    font-family: 'Quicksand', serif;
 }
 
 .leftside {
-    display: flex;
 }
 
 input:focus {
@@ -11,26 +11,48 @@ input:focus {
     border: blue;
 }
 
+
 .bgimage {
     background-image: url(bg.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    width:35%;
-    position: fixed;
-    float: left;
+    width: auto;
+
     height: 100%;
 }
 
 .credit {
-    display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 .rightside {
-    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgb(243, 242, 241);
 }
 
 .headertext {
-    display: flex;
 }
+
+.button {
+    background-color:rgb(19, 119, 19);
+    color:white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 7px rgb(168, 165, 165);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="password"] {
+    box-sizing: border-box;
+}
+
