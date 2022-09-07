@@ -1,36 +1,74 @@
 .body {
     display: flex;
     font-family: 'Quicksand', serif;
+
 }
 
 .leftside {
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 input:focus {
     box-shadow: 3px 2px 7px grey;
-    border: blue;
 }
 
+.bglogo {
+    padding: 10px;
+    margin-top: 80px;
+    justify-content: center;
+    display: flex;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.6);
+    align-items: center;
+}
+
+.bglogo > span {
+    font-size: 100px;
+    letter-spacing: -7px;
+}
+
+img {
+    max-width: 20%;
+
+}
 
 .bgimage {
-    background-image: url(bg.avif);
+    background-image: url(pic.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
+    width: 800px;
+    height: 750px;
+}
 
-    height: 100%;
+.formdetails {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 7px 3px -2px rgb(221, 220, 220);
+}
+
+.creation {
+    padding: 20px;
+}
+
+a[href=""] {
+    color:green;
+    text-decoration: none;
+}
+
+a[href*="splash"] {
+    color: white;
 }
 
 .credit {
-    flex-direction: column;
     text-align: center;
+    color: white;
 }
 
 .rightside {
-    flex:1;
     flex-wrap: wrap;
-    padding: 20px;
-    justify-content: center;
     background-color: rgb(243, 242, 241);
 }
 
@@ -38,7 +76,7 @@ input:focus {
 }
 
 .button {
-    background-color:rgb(19, 119, 19);
+    background-color:#596D48;
     color:white;
     padding-left: 30px;
     padding-right: 30px;
@@ -46,13 +84,5 @@ input:focus {
     padding-bottom: 10px;
     border-radius: 10px;
     box-shadow: 3px 2px 7px rgb(168, 165, 165);
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="tel"],
-input[type="password"] {
-    box-sizing: border-box;
 }
 
