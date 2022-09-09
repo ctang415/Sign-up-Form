@@ -130,3 +130,7 @@ input:not(:placeholder-shown):not(:focus):invalid {
 input:valid {
     box-sizing: border-box;
 }
+
+.error {
+    color: red;
+}

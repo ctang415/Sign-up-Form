@@ -2,6 +2,7 @@ const form = document.querySelector('.form')
 const pNumber = document.getElementById('phonenumber');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+const passwordConfirm = document.getElementById('passwordconfirm');
 const passwordError = document.querySelector('#password + span.error');
 
 pNumber.addEventListener("input", (event) => {
@@ -31,23 +32,15 @@ form.addEventListener('submit', (event) => {
 })
 
 
-password.addEventListener('input', (event) => {
-    if (email.validity.valid) {
-        emailError.textContent = ' ';
-        emailError.className = "error";
+passwordConfirm.addEventListener('input', (event) => {
+    if (passwordConfirm.value !== password.value) {
+        passwordError.textContent = '*Passwords do not match';
     }
     else {
-        showError();
-    }    
+        passwordError.textContent = '';
+    }
 })
 
-function showError() {
- if (email.validity.typeMismatch) {
-        emailError.textContent = "*Passwords do not match."
-    }
-}
-
-    emailError.className = "error active";
 
 
   
