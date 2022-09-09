@@ -1,3 +1,7 @@
+:root {
+    --error-color: 2px solid red;
+}
+
 .body {
     display: flex;
     font-family: 'Quicksand', serif;

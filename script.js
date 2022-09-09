@@ -25,6 +25,17 @@ email.addEventListener("input", (event) => {
     }
 });
 
+password.addEventListener('input', (event) => {
+    if (password.validity.tooShort) {
+        password.setCustomValidity("Password must be at least 8 characters.");
+        password.reportValidity();
+    }
+    else {
+        password.setCustomValidity("");
+    }
+})
+
+
 form.addEventListener('submit', (event) => {
     if(!email.validity.valid || !pNumber.validity.valid) {
         event.preventDefault();
