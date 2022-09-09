@@ -46,9 +46,13 @@ form.addEventListener('submit', (event) => {
 passwordConfirm.addEventListener('input', (event) => {
     if (passwordConfirm.value !== password.value) {
         passwordError.textContent = '*Passwords do not match';
+        password.style.border="2px solid red";
+        passwordConfirm.style.border="2px solid red";
     }
     else {
         passwordError.textContent = '';
+        password.style.border="";
+        passwordConfirm.style.border="";
     }
 })
 
