@@ -35,14 +35,12 @@
                     <div class="row">
                         <div class="column">
                     <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="John" required>
-                    <span></span>
+                    <input type="text" id="firstname" minlength="2" name="firstname" placeholder="John" required>
                     </div>
 
                     <div class="column">
                     <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Smith" required>
-                    <span></span>
+                    <input type="text" id="lastname" minlength="2" name="lastname" placeholder="Smith" required>
                 </div>
             </div>
 
@@ -50,25 +48,23 @@
                         <div class="column">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" placeholder="you@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
-                    <span></span>
                     </div>
                     <div class="column">
                     <label for="phonenumber">Phone Number</label>
                     <input type="tel" id="phonenumber" name="phonenumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                    <span></span>
                 </div>
                 </div>
 
                 <div class="row">
                     <div class="column">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" minlength="8" required>
-                    <span></span>
+                    <input type="password" id="password"  name="password" placeholder=" " minlength="8" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                     <div class="column">
                     <label for="passwordconfirm">Confirm Password</label>
-                    <input type="password" name="password" id="passwordconfirm" required>
-                    <span></span>
+                    <input type="password" name="password" id="passwordconfirm" placeholder=" " required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 </div>
             </div>

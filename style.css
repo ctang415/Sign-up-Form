@@ -3,11 +3,6 @@
     font-family: 'Quicksand', serif;
 }
 
-.leftside {
-    display: flex;
-    flex-direction: column;
-}
-
 
 input:focus {
     box-shadow: 3px 2px 7px grey;
@@ -15,7 +10,7 @@ input:focus {
 
 .bglogo {
     padding: 10px;
-    margin-top: 80px;
+    margin-top: 100px;
     justify-content: center;
     display: flex;
     color: white;
@@ -24,7 +19,7 @@ input:focus {
 }
 
 .bglogo > span {
-    font-size: 100px;
+    font-size: 8rem;
     letter-spacing: -7px;
 }
 
@@ -72,7 +67,7 @@ a[href*="splash"] {
 .credit {
     text-align: center;
     color: white;
-    margin-top: 460px;
+    margin-top: 440px;
 }
 
 
@@ -91,6 +86,10 @@ a[href*="splash"] {
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgb(153, 148, 148);
     border-style: none;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .headertext {
@@ -113,7 +112,21 @@ a[href*="splash"] {
     padding: 10px;
 }
 
-input:invalid {
-    border: 2px solid rgb(247, 99, 99);
-    border-radius: 3px;
+
+.creation > p {
+    font-size: 15px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 250px;
+}
+
+
+input:not(:placeholder-shown):not(:focus):invalid {
+    border: 2px solid red;
   }
+
+input:valid {
+    box-sizing: border-box;
+}
